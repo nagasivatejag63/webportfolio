@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+  <body>
+     <style>
+        .otpBLock {
+            border: 2px solid darkkhaki;
+            color: coral;
+            background-color: antiquewhite;
+            width: 80px;
+            margin: 20px;
+            padding: 10px;
+            text-align: center;
+            font-weight: bolder;
+        }
+     </style>
+
+      <div class="otpBLock">otp</div>
+        <input type="button" value="click here" onclick="otpGenerator()">
+     <script>
+        var otpValues = prompt("Enter size of otp");
+        var otpGenerator = () => {
+        var otp = '';
+        for(var i = 0; i < otpValues; i++) {
+            otp = otp + getRandomNumber();
+            console.log(otp);
+           }
+          document.querySelector(".otpBLock").innerText = otp;
+        }   
+
+        var getRandomNumber = () => {
+           return Math.round(Math.random() * 9);
+        }
+     </script>
+
+  </body>
+</html>
