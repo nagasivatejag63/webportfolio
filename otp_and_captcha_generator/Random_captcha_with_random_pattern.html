@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Random </title>
+    <script src="randomcaptchaLib.js"></script>
+</head>
+<body>
+    <h3> Random Captcha With Random Pattern </h3>
+
+    <style>
+
+        .captchaBlock {
+
+            border: 2px solid darkred;
+            text-align: center;
+            width: 80px;
+            margin: 20px;
+            padding: 20px;
+            font-weight: bold;
+            color: blue;
+            background-color: cornsilk;
+
+        }
+
+    </style>
+
+    <div class="captchaBlock"> Captcha </div>
+
+    <button onclick="genCaptchaValue()"> Generate </button>
+
+   <script>
+
+      var values = ['U', 'L', 'N'];
+
+       var order = 'NULNL';
+
+       var genCaptchaValue = () => {
+
+        // var captchaPatternLength = prompt ("Enter captcha size");
+
+        var captchaPatternSize = 5;
+
+        var captchaPattern = '';
+
+        for (var i = 0; i < captchaPatternSize; i++) {
+
+           var captcha = Math.round ( Math.random() * (values.length - 1) );
+
+            captchaPattern += values[captcha];
+
+        }
+
+        console.log(captchaPattern);
+
+        var pattern = captchaPattern.split('');
+
+        console.log(pattern);
+         
+        var randomCaptcha = '';
+
+        for (var i = 0; i < pattern.length; i++) {
+
+            switch(pattern[i]) {
+
+                case 'L' :
+                    randomCaptcha = randomCaptcha + genLowerCaseRandom();
+                    break;
+
+                case 'U' : 
+                    randomCaptcha += genUpperCaseRandom();
+                    break;
+
+                case 'N' : 
+                    randomCaptcha += genRandomNumber();
+                    break;
+
+            }
+        }
+
+        console.log(randomCaptcha);
+
+        document.querySelector(".captchaBlock").innerHTML = randomCaptcha;
+
+       }
+
+   </script>
+</body>
+</html>
