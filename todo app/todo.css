@@ -1,0 +1,67 @@
+body {
+    background-image: url(./images/to-do.jpg);
+    background-size: cover;
+}
+.todo-list-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    border: 2px solid #171717;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+h2 {
+    color: rgb(0, 0, 0);
+}
+.task {
+    margin-bottom: 10px;
+    margin-left: 20px;
+    width: 86%;
+    padding: 8px;
+    background-color: #526b5e;
+    border-bottom: 2px solid #0c0c0c;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.delete-btn, .edit-btn {
+    margin-left: 10px;
+}
+.delete-btn {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.edit-btn {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#task-holder {
+    padding: 10px;
+    background-color: rgb(185, 185, 185);
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-left: 10px;
+    width: 70%;
+    display: inline-block;
+}
+.input-container {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.add-task-button {
+    margin-left: 10px;
+    padding: 10px;
+}
+#task-list {
+    text-align: center;
+}

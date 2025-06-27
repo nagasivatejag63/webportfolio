@@ -1,0 +1,104 @@
+.modal-body ul {
+    margin: 10px;
+    padding: 10px;
+    
+}
+
+.modal-content {
+    background-image: url(./background.png);
+}
+.modal-title {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+.modal-body ul li {
+    margin: 10px;
+    padding: 10px;
+    list-style: none;
+    background-color: #fff;
+	 border-radius: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.captchaBlockForLogin {
+
+    border: none;
+    text-align: center;
+    width: 94px;
+    margin: 20px;
+    padding: 10px;
+    font-weight: bold;
+    color: blue;
+    background-color: cornsilk;
+
+}
+.captchaBlockForSignup {
+    list-style: none;
+    background: none;
+    border: none;
+    text-align: center;
+    width: 94px;
+    margin: 20px;
+    padding: 10px;
+    font-weight: bold;
+    color: blue;
+    background-color: cornsilk;
+
+}
+.captchaBlockForEmail {
+    list-style: none;
+    background: none;
+    border: none;
+    text-align: center;
+    width: 94px;
+    margin: 20px;
+    padding: 10px;
+    font-weight: bold;
+    color: blue;
+    background-color: cornsilk;
+}
+.captchabtn {
+    position: relative;
+    left: 129px;
+    top: -54px;
+
+}
+#errMsgBlock {
+    text-align: center;
+    font-weight: bold;
+    color: red;
+	font-family: 'Times New Roman', Times, serif;
+}
+
+#passLogin{
+    position: absolute;
+    left: 410px;
+    top: 130px;
+}
+#pswdSignUp {
+    position: absolute;
+    left: 410px;
+    top: 130px;
+}
+#repassSignUp{
+    position: absolute;
+    left: 410px;
+    top: 200px;
+}
+#frgtpwdmsg {
+    text-align: center;
+    font-weight: bold;
+    color: green;
+    display: none;
+}
+.modal-body p {
+    text-align: center;
+    font-weight: bold;
+    color: red;
+    display: none  
+}
+#signupmsg {
+    text-align: center;
+    font-weight: bold;
+    color: green;
+    display: none;
+}
